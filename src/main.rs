@@ -67,7 +67,7 @@ impl UnitCube {
         let projection_matrix = Mat3 {
             x_axis: vec3(1., 0., 0.),
             y_axis: vec3(0., 1., 0.),
-            z_axis: vec3(0., 0., 1.),
+            z_axis: vec3(0., 0., 0.),
         };
 
         let projected_vertices: [Vec3; 8] = self.vertices.map(|v| projection_matrix * v);
